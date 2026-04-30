@@ -1,1 +1,12 @@
-
+{
+    "name": "opensearch-kafka-dev",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "postCreateCommand": "pip install uv && uv sync",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
